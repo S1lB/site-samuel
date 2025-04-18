@@ -6,55 +6,138 @@
   <title>???????????????</title>
 
   <style>
-    body{
-      background-color:rgb(250, 199, 206);
-      font-size:23px;
-      font-family:Arial;
-      height:2000px;
-      padding-top:200px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-.img{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
- }
- .header{
-  position:fixed;
-  top:0;
-  right:0;
-  left:0;
-  background-color:green;
- }
- .button{
-  display:flex;
-  justify-content: center;
-  margin-top:100px;
-  width:100%
- }
-.button button{
-  padding:15px 330px;
-  border:none;
-  border-radius:8px;
-  font-size:24px;
-  font-family:'Times New Roman', Times, serif;
-}
 
-.main{
-  display:flex;
-  flex-direction: column;
-}
+    body {
+      background-color: rgb(250, 199, 206);
+      font-size: 23px;
+      font-family: Arial, sans-serif;
+      padding-top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(59, 51, 40, 0.9);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      padding: 15px;
+      z-index: 10;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .img img {
+      width: 100%;
+      max-width: 730px;
+      height: auto;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .button a {
+      padding: 15px 40px;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 24px;
+      font-family: 'Times New Roman', Times, serif;
+      cursor: pointer;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+      transition: background 0.56s, box-shadow 1s;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+
+    .button a:hover {
+      background-color: red;
+      box-shadow: 0px 1px 20px rgb(0, 0, 0);
+    }
+
+    .meio-text {
+      text-align: center;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    .bottom-text {
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      font-size: 12px;
+      padding: 0 10px;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+
+    @media (max-width: 600px) {
+      .button a {
+        padding: 15px 20px;
+        font-size: 18px;
+      }
+
+      .bottom-text {
+        font-size: 10px;
+        left: 10px;
+        right: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
+  <div class="header">
+    <p>??????????????????????????</p>
+  </div>
 
   <div class="main">
-    <div class="img"><img src="oudecantalarrai.jpg"></div>
-    <div class="button"><button> Site Aleatório</button></div>
+    <div class="img">
+      <img src="oudecantalarrai.jpg" alt="Imagem misteriosa">
+    </div>
+    <div class="button">
+      <a href="https://www.profitableratecpm.com/u91jkbpx?key=f3450cea6a10344bbf135ec81ab1e5d2" target="_blank">
+        📼 SITE ALEATÓRIO 📼
+      </a>
+    </div>
+    <p class="meio-text">
+      Um site/oferta aleatória da internet para cada clique.
+    </p>
   </div>
-  <div class="header">  <p>??????????????????????????</p></div>
-  <div class="nav"></div>
+
+  <p class="bottom-text">
+    .... - - .--. ... -..-. -..-. -.. .. ... -.-. --- .-. -.. .-.-.- --. --. -..-. -.. ..-. -.... -- -.-. ..- . . (O Felca verá o Bruxo da Seita)
+  </p>
 
 </body>
 </html>
